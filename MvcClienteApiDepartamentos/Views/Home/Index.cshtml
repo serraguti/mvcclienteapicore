@@ -2,9 +2,29 @@
 
 @section scripts{ 
     <script>
+        var urlapi = "https://apicruddepartamentoscorepgs.azurewebsites.net/";
         $(document).ready(function () {
-
+            cargarDepartamentos();
         });
+
+        function cargarDepartamentos() {
+            var request = "api/departamentos";
+            $.ajax({
+                url: urlapi + request,
+                type: "GET",
+                success: function (data) {
+                    var html = "";
+                    $.each(data, function (ind, dept) {
+                        html += "<tr>";
+                        html += "<td>" + dept.idDepartamento + "</td>";
+                        html += "<td>" + dept.nombre + "</td>";
+                        html += "<td>" + dept.localidad + "</td>";
+                        html += "</tr>";
+                    });
+                    $("#tabladepartamentos tbody").html(html);
+                }
+            });
+        }
     </script>
 }
 
@@ -14,7 +34,7 @@
            class="form-control"/><br/>
     <label>Nombre: </label>
     <input type="text" id="cajanombre" placeholder="Nombre departamento"
-           class="form-control"/>br/>
+           class="form-control"/><br/>
     <label>Localidad: </label>
     <input type="text" id="cajalocalidad" placeholder="Localidad"
            class="form-control"/><br/>
@@ -27,7 +47,7 @@
                 class="btn btn-danger">Eliminar</button>
     </div>
 </form>
-<table class="table table-bordered table-info" 
+<table class="table table-bordered table-warning" 
        id="tabladepartamentos">
     <thead>
         <tr>
