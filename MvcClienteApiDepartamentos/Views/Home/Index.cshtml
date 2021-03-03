@@ -5,6 +5,59 @@
         var urlapi = "https://apicruddepartamentoscorepgs.azurewebsites.net/";
         $(document).ready(function () {
             cargarDepartamentos();
+            $("#botoneliminar").click(function () {
+                var id = $("#cajanumero").val();
+                var request = "api/departamentos/" + id;
+                $.ajax({
+                    url: urlapi + request,
+                    type: "DELETE",
+                    success: function () {
+                        cargarDepartamentos();
+                    }
+                });
+            });
+
+            $("#botoninsertar").click(function () {
+                var id = parseInt($("#cajanumero").val());
+                var nombre = $("#cajanombre").val();
+                var loc = $("#cajalocalidad").val();
+                var departamento = new Object();
+                departamento.idDepartamento = id;
+                departamento.nombre = nombre;
+                departamento.localidad = loc;
+                var json = JSON.stringify(departamento);
+                var request = "api/departamentos";
+                $.ajax({
+                    url: urlapi + request,
+                    type: "POST",
+                    data: json,
+                    contentType: "application/json",
+                    success: function () {
+                        cargarDepartamentos();
+                    }
+                });
+            });
+
+            $("#botonmodificar").click(function () {
+                var id = parseInt($("#cajanumero").val());
+                var nombre = $("#cajanombre").val();
+                var localidad = $("#cajalocalidad").val();
+                var departamento = new Object();
+                departamento.idDepartamento = id;
+                departamento.nombre = nombre;
+                departamento.localidad = localidad;
+                var json = JSON.stringify(departamento);
+                var request = "api/departamentos";
+                $.ajax({
+                    url: urlapi + request,
+                    contentType: "application/json",
+                    type: "PUT",
+                    data: json, 
+                    success: function () {
+                        cargarDepartamentos();
+                    }
+                });
+            });
         });
 
         function cargarDepartamentos() {
