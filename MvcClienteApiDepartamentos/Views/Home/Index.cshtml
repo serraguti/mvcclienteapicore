@@ -1,0 +1,41 @@
+﻿<h1>Consumo Api Crud Departamentos</h1>
+
+@section scripts{ 
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+}
+
+<form method="post">
+    <label>Id Departamento: </label>
+    <input type="text" id="cajanumero" placeholder="Id departamento"
+           class="form-control"/><br/>
+    <label>Nombre: </label>
+    <input type="text" id="cajanombre" placeholder="Nombre departamento"
+           class="form-control"/>br/>
+    <label>Localidad: </label>
+    <input type="text" id="cajalocalidad" placeholder="Localidad"
+           class="form-control"/><br/>
+    <div>
+        <button type="button" id="botoninsertar"
+                class="btn btn-success">Insertar</button>
+        <button type="button" id="botonmodificar"
+                class="btn btn-info">Modificar</button>
+        <button type="button" id="botoneliminar"
+                class="btn btn-danger">Eliminar</button>
+    </div>
+</form>
+<table class="table table-bordered table-info" 
+       id="tabladepartamentos">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Localidad</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table> 
