@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MvcClienteApiDepartamentos.Models;
-using MvcClienteApiDepartamentos.Services;
+using MvcClienteApi.Models;
+using MvcClienteApi.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MvcClienteApiDepartamentos.Controllers
+namespace MvcClienteApi.Controllers
 {
     public class DepartamentosController : Controller
     {

@@ -14,13 +14,27 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\Views\_ViewImports.cshtml"
-using MvcClienteApiDepartamentos;
+using MvcClienteApi;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\Views\_ViewImports.cshtml"
+using MvcClienteApi.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\Views\_ViewImports.cshtml"
+using NuGetDoctoresModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"20a0efa83f2b42c49bd5059d2c6ee2061c44a6e5", @"/Views/Departamentos/ApiClienteAjax.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c980deec5b08da78409e42e4ad442149604f55ba", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bb78bf4236d23debe07e652394c0e58f10791342", @"/Views/_ViewImports.cshtml")]
     public class Views_Departamentos_ApiClienteAjax : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/serviceapidepartamentos.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -54,7 +68,7 @@ using MvcClienteApiDepartamentos;
             WriteLiteral("<h1>Consumo Api Crud Departamentos</h1>\r\n\r\n");
             DefineSection("scripts", async() => {
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20a0efa83f2b42c49bd5059d2c6ee2061c44a6e54214", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20a0efa83f2b42c49bd5059d2c6ee2061c44a6e54698", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -112,7 +126,7 @@ using MvcClienteApiDepartamentos;
             }
             );
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20a0efa83f2b42c49bd5059d2c6ee2061c44a6e56957", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20a0efa83f2b42c49bd5059d2c6ee2061c44a6e57441", async() => {
                 WriteLiteral(@"
     <label>Id Departamento: </label>
     <input type=""text"" id=""cajanumero"" placeholder=""Id departamento""

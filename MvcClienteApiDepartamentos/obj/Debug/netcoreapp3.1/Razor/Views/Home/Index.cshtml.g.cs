@@ -14,13 +14,27 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\Views\_ViewImports.cshtml"
-using MvcClienteApiDepartamentos;
+using MvcClienteApi;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\Views\_ViewImports.cshtml"
+using MvcClienteApi.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\Views\_ViewImports.cshtml"
+using NuGetDoctoresModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5eba14f75ec44bfb67fa69fc5583e9051e06cf01", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c980deec5b08da78409e42e4ad442149604f55ba", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bb78bf4236d23debe07e652394c0e58f10791342", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

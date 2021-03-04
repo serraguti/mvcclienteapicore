@@ -6492,9 +6492,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos.csproj",
-      "projectName": "MvcClienteApiDepartamentos",
-      "projectPath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos.csproj",
+      "projectUniqueName": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApi.csproj",
+      "projectName": "MvcClienteApi",
+      "projectPath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApi.csproj",
       "packagesPath": "C:\\Users\\ProfesorMCSD\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\obj\\",
       "projectStyle": "PackageReference",

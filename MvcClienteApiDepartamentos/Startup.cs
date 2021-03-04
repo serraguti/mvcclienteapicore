@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MvcClienteApiDepartamentos.Services;
+using MvcClienteApi.Services;
 
-namespace MvcClienteApiDepartamentos
+namespace MvcClienteApi
 {
     public class Startup
     {
@@ -26,6 +26,9 @@ namespace MvcClienteApiDepartamentos
                 this.Configuration["urlapidepartamentos"];
             services.AddTransient(x => 
             new ServiceDepartamentos(urlapidepartamentos));
+            String urldoctores =
+                this.Configuration["urlapidoctores"];
+            services.AddTransient(x => new ServiceDoctores(urldoctores));
             services.AddControllersWithViews();
         }
 

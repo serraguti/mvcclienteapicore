@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace MvcClienteApiDepartamentos
+namespace MvcClienteApi
 {
     public class Program
     {

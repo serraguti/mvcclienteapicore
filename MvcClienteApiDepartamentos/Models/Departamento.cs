@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MvcClienteApiDepartamentos.Models
+namespace MvcClienteApi.Models
 {
     public class Departamento
     {
