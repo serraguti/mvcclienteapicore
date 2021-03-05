@@ -132,3 +132,4 @@ C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDeparta
 C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\obj\Debug\netcoreapp3.1\MvcClienteApi.Views.pdb
 C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\obj\Debug\netcoreapp3.1\MvcClienteApi.csproj.CopyComplete
 C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\obj\Debug\netcoreapp3.1\MvcClienteApi.genruntimeconfig.cache
+C:\Users\ProfesorMCSD\Documents\Visual Studio 2019\Projects\MvcClienteApiDepartamentos\MvcClienteApiDepartamentos\obj\Debug\netcoreapp3.1\Razor\Views\Doctores\DoctoresEspecialidad.cshtml.g.cs

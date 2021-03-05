@@ -124,5 +124,27 @@ namespace MvcClienteApi.Services
                 await client.PutAsync(request, new StringContent(""));
             }
         }
+
+        public async Task<List<String>> GetEspecialidadesAsync()
+        {
+            String request = "api/doctores/especialidades";
+            List<String> especialidades = await
+                this.CallApi<List<String>>(request);
+            return especialidades;
+        }
+
+        public async Task<List<Doctor>> GetDoctoresEspecialidadAsync
+            (List<String> especialidades)
+        {
+            String request = "api/doctores/doctoresespecialidad?";
+            //api/doctores/doctoresespecialidad?especialidad=pediatria&especialidad=cardio
+            String data = "";
+            foreach (String espe in especialidades)
+            {
+                data += "especialidad=" + espe + "&";
+            }
+            data = data.Trim('&');
+            return await this.CallApi<List<Doctor>>(request + data);
+        }
     }
 }

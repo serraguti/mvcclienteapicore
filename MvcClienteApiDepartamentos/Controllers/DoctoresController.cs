@@ -65,5 +65,21 @@ namespace MvcClienteApi.Controllers
             await this.ServiceApi.DeleteDoctorAsync(id);
             return RedirectToAction("Index");
         }
+
+        public async Task<IActionResult> DoctoresEspecialidad()
+        {
+            ViewData["ESPECIALIDADES"] =
+                await this.ServiceApi.GetEspecialidadesAsync();
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DoctoresEspecialidad
+            (List<String> especialidad)
+        {
+            ViewData["ESPECIALIDADES"] =
+                await this.ServiceApi.GetEspecialidadesAsync();
+            return View(await this.ServiceApi.GetDoctoresEspecialidadAsync(especialidad));
+        }
     }
 }
