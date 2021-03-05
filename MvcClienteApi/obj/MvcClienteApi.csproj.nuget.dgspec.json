@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApi.csproj": {}
+    "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApi\\MvcClienteApi\\MvcClienteApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApi.csproj": {
+    "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApi\\MvcClienteApi\\MvcClienteApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApi.csproj",
+        "projectUniqueName": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApi\\MvcClienteApi\\MvcClienteApi.csproj",
         "projectName": "MvcClienteApi",
-        "projectPath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApi.csproj",
+        "projectPath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApi\\MvcClienteApi\\MvcClienteApi.csproj",
         "packagesPath": "C:\\Users\\ProfesorMCSD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\obj\\",
+        "outputPath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApi\\MvcClienteApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

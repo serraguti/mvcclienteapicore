@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "akVIzNALQBXWunDMpsYUvKl6GRJNNhataSZFv01UuQrQmnwb4cIrWxI+6by5SaRVEnzYPPZGv0vsPubDhWzU4g==",
+  "dgSpecHash": "2ik6f4+EVC6m37Wjm4XCO/Ou6Ev0VcvtGNxsuOJ2BkrVYv+gIf0E3Eh1BXm+Nq5or7tySiJy16Mf5nm9WUCwIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApiDepartamentos\\MvcClienteApiDepartamentos\\MvcClienteApi.csproj",
+  "projectFilePath": "C:\\Users\\ProfesorMCSD\\Documents\\Visual Studio 2019\\Projects\\MvcClienteApi\\MvcClienteApi\\MvcClienteApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ProfesorMCSD\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\ProfesorMCSD\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
