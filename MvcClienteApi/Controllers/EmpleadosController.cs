@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using MvcClienteApi.Filters;
+using MvcClienteApi.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +11,25 @@ namespace MvcClienteApi.Controllers
 {
     public class EmpleadosController : Controller
     {
-        public IActionResult PerfilEmpleados()
+        ServiceEmpleados ApiService;
+
+        public EmpleadosController(ServiceEmpleados apiservice)
         {
-            return View();
+            this.ApiService = apiservice;
         }
 
-        public IActionResult Subordinados()
+        [EmpleadoAuthorize]
+        public async Task<IActionResult> PerfilEmpleado()
         {
-            return View();
+            String token = HttpContext.Session.GetString("TOKEN");
+            return View(await this.ApiService.GetPerfil(token));
+        }
+
+        [EmpleadoAuthorize]
+        public async Task<IActionResult> Subordinados()
+        {
+            String token = HttpContext.Session.GetString("TOKEN");
+            return View(await this.ApiService.GetSubordinados(token));
         }
     }
 }

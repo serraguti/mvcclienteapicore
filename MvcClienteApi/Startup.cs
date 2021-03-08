@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -29,7 +30,29 @@ namespace MvcClienteApi
             String urldoctores =
                 this.Configuration["urlapidoctores"];
             services.AddTransient(x => new ServiceDoctores(urldoctores));
-            services.AddControllersWithViews();
+            String urlapioauthempleados =
+                this.Configuration["urlapioauthempleados"];
+            services.AddTransient(x => new ServiceEmpleados(urlapioauthempleados));
+            //CONFIGURAMOS LOS SERVICIOS PARA SESSION Y SEGURIDAD
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(15);
+                options.Cookie.IsEssential = true;
+            });
+            services.AddAuthentication(options =>
+            {
+                options.DefaultSignInScheme =
+                CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme =
+                CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme =
+                CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie();
+
+            services.AddControllersWithViews(options => {
+                options.EnableEndpointRouting = false;
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -42,11 +65,16 @@ namespace MvcClienteApi
             app.UseRouting();
 
             app.UseStaticFiles();
-            app.UseEndpoints(endpoints =>
+
+            app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseSession();
+
+            app.UseMvc(options =>
             {
-                endpoints.MapControllerRoute(
+                options.MapRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}"
+                    template: "{controller=Home}/{action=Index}/{id?}"
                 );
             });
         }
